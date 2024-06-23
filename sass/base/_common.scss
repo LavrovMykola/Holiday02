@@ -1,8 +1,12 @@
-a{
-    text-decoration: none;
+body{
+    font-family: var('--font-family');
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
 }
-ul{
-    list-style: none;
+.img, button{
+    display: block;
 }
 .container{
     min-width: 320px;
@@ -11,7 +15,10 @@ ul{
     margin: 0 auto;
     padding: 0 15px;
 
-@media (min-width: 768px){
-    max-width: 970px;
+@media screen and (min-width: 768px){
+    max-width: 768px;
+}
+@media screen and (min-width: 1024px){
+    max-width: 1200px;
 }
 }
