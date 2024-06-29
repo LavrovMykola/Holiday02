@@ -1,9 +1,51 @@
-// .hero{
-//     content: '';
-//     background-image: url('../../images/hero-mobile.jpg');
-//     background-position: center;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     height: 542px;
-//     width: 100%;
-// }
+.hero {
+  content: "";
+  background-image: url("../images/hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 241px 0 136px;
+  color: #fff;
+  @media screen and (min-width:768px) {
+    padding: 140px 0 232px;
+  }
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: 215px;
+    margin: 0 auto 12px;
+    @media screen and (min-width:768px) {
+      font-size: 52px;
+      max-width: 370px;
+      margin-bottom: 36px;
+    }
+}
+    &__text {
+      font-size: 18px;
+      font-family: var("--second-family");
+      font-weight: 300;
+      margin-bottom: 17px;
+      max-width: 247px;
+      margin: 0 auto 17px;
+      @media screen and (min-width:768px) {
+        font-size: 24px;
+        max-width: 100%;
+        margin-bottom: 33px;
+      }
+    }
+  &__btn {
+    padding: 13px 37px;
+    background-color: rgb(255, 78, 80);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    @media screen and (min-width:768px) {
+        font-size: 24px;
+        max-width: 100%;
+        padding: 12px 11px;
+      }
+  }
+}

@@ -9,6 +9,7 @@
     line-height: 22px;
     text-transform: uppercase;
     color: #fff;
+    margin: 0 auto;
   }
   .container {
     display: flex;
@@ -26,15 +27,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     gap: 4px;
     &__link{
         display: block;
         text-align: center;
         color: #fff;
         padding: 10px;
-        &__border{
+        padding: 10px 14px;
+        border-radius: 50px;
+        &--border{
             border: 2px solid #fff;
-            border-radius: 50px;
+            
         }
     }
 }
